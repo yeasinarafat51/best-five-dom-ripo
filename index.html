@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assaint-5</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  
+
+
+    <section class="grid-container divide-x">
+        <div class="dis1">
+          <!-- card-1 -->
+            <div class="card w-80 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="sakib.jpg" alt="Shoes" class="rounded-xl h-40" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Shakib</h2>
+                  <p>Run 15000 Wickets 1000</p>
+                  <div class="card-actions">
+                    <button class="btn btn-primary " onclick="addcard(this)">Select</button>
+                  </div>
+                </div>
+              </div>
+              <!-- card-1 -->
+              <!-- card-2 -->
+              <div class="card w-80 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="khabib.jpg" alt="Shoes" class="rounded-xl h-40" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Khabib</h2>
+                  <p>UFC Win 29 Loss 0</p>
+                  <div class="card-actions">
+                    <button class="btn btn-primary" onclick="addcard(this)">Select</button>
+                  </div>
+                </div>
+                <!-- card-2 -->
+                <!-- card-3 -->
+              </div><div class="card w-80 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="messi.jpg" alt="Shoes" class="rounded-xl h-40" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Messi</h2>
+                  <p>Goal 800 Assist 1000</p>
+                  <div class="card-actions">
+                    <button class="btn btn-primary" onclick="addcard(this)">Select</button>
+                  </div>
+                </div>
+              </div>
+              <!-- card-3 -->
+              <!-- card-4 -->
+              <div class="card w-80 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="neymar.jpg" alt="Shoes" class="rounded-xl  h-40" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Neymar</h2>
+                  <p>goal 500 Assist 600</p>
+                  <div class="card-actions">
+                    <button class="btn btn-primary" onclick="addcard(this)">select</button>
+                  </div>
+                </div>
+              </div>
+              <!-- card-4 -->
+              <!-- card-5 -->
+              <div class="card w-80 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="ronaldo1.jpg" alt="Shoes" class="rounded-xl h-40" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Ronaldo</h2>
+                  <p>Goal 850 Assist 700</p>
+                  <div class="card-actions">
+                    <button class="btn btn-primary" onclick="addcard(this)">Select</button>
+                  </div>
+                </div>
+              </div>
+              <!-- card-5 -->
+              <!-- card-6 -->
+              <div class="card w-80 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="virat1.jpg" alt="Shoes" class="rounded-xl h-40" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Virat</h2>
+                  <p>Run 250000 Wickets 20</p>
+                  <div class="card-actions">
+                    <button class="btn btn-primary" onclick="addcard(this)">Select</button>
+                  </div>
+                </div>
+              </div>
+              <!-- card-6 -->
+        </div>
+        <!-- outofcontrol -->
+        <div class="dis2 pl-5 mt-5 divide-y">
+          <!-- first -->
+            
+            <div class="h-100 mb-10">
+              <h1 class="text-3xl">Slected - 
+                <span id="total-player-added">0</span>
+               </h1> 
+               <!-- tableroew -->
+               <div class="overflow-x-auto">
+                <table class="table w-full">
+                  <!-- head -->
+                  
+                  <tbody id="player-table">
+                    <!-- row 1 -->
+                    <!-- <tr>
+                      <th>1</th>
+                      <td>Cy Ganderton</td>
+                     
+                    </tr> -->
+                    <!-- row 2 -->
+                    
+                  </tbody>
+                </table>
+              </div>
+                <!-- tablerow -->
+            </div>
+            <!-- first -->
+            <!-- second -->
+            <div>
+              <h1 class="text-3xl my-5">
+                Budget
+              </h1>
+              <div>
+                <h3>Per player <input class="bg-red-200 w-60" id="user-player" type="text"></h3>
+                <button class="btn btn-primary my-5 w-full " id="btn-calculate">Calculate</button>
+                <h3 class="my-5">Player Expernce $<span id="player-calculated">000</span></h3>
+                <h3  class="my-5">Coach <input class="bg-red-200 w-60" id="coach" type="text"></h3>
+                <h3 class="my-5">Manager<input class="bg-red-200 w-60" id="manager" type="text"></h3>
+                <button class="btn btn-primary my-5 w-full " id="btn-calcultar" >Calculate Total</button>
+                <h3 class="my-5" >Total player $<span id="total-player">000</span></h3>
+              </div>
+            </div>
+
+            <!-- seconds -->
+        </div>
+        
+        <div>
+            
+        </div>
+    </section>
+   <script src="index.js"></script>
+</body>
+</html>
